@@ -10,10 +10,10 @@
 
 ## 项目进度
 - [ ] 完成了图鉴页面  
-<img src="image/tujian2.jpg" width="50%">
-- [X] 功能界面
-- [X] 攻略界面
-- [X] 个人信息界面
+<img src="image/tujian2.jpg" width="50%">  
+- [ X ] 功能界面
+- [ X ] 攻略界面
+- [ X ] 个人信息界面
 
 ## 项目说明
 --- 
