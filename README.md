@@ -6,8 +6,7 @@
 
 > 《ROCO攻略》导航栏首页截图  
 
-<img src="image/tujian.jpg" width="30%"> <img src="image/gongneng.jpg" width="30%"> <img src="image/gonglve.jpg" width="30%">  
-<img src="image/wo.jpg" width="30%">
+<img src="image/tujian.jpg" width="34%"> <img src="image/gongneng.jpg" width="34%"> <img src="image/gonglve.jpg" width="34%">  <img src="image/wo.jpg" width="34%">
 
 ## 项目进度
 - [ ] 完成了图鉴页面  
@@ -30,7 +29,8 @@
 <http://192.168.153.1:8088/pet/series>
 > 该域名在微信小程序中属于不合法域名，需要关闭对域名的校验  
 <img src="image/url_checking.jpg">
-- 返回数据格式样例：  
+- 返回数据格式样例:  
+
 ```json
 {
     "data": {
