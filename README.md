@@ -28,7 +28,7 @@
 - 请求连接：
 <http://192.168.153.1:8088/pet/series>
 > 该域名在微信小程序中属于不合法域名，需要关闭对域名的校验  
-<img src="image/url_checking.jpg">
+<img src="image/url_checking.jpg">  
 - 返回数据格式样例:  
 
 ```json
