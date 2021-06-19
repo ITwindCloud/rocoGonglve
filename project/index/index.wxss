@@ -1,0 +1,191 @@
+text,view{
+  margin:0;
+  padding:0;
+}
+
+/* -----------搜索框-------------- */
+.search-area{
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  height:60rpx;
+  margin-top:10rpx;
+  /* background-color:rgb(231, 235, 235); */
+  background-color: #f2f3f3;
+  border-radius:30rpx;
+  margin-left:2%;
+}
+
+.search-area input{
+  display: inline-block;
+  font-size:30rpx;
+  height:60rpx;
+  line-height: 60px;
+  margin-left:24rpx;
+}
+.search-area text{
+  font-size:40rpx;
+  color:#ccc;
+  line-height:60rpx;
+}
+.sousuo{
+  float:left;
+  margin-left:10rpx;
+}
+.zhaoxiangji{
+  float: right;
+  margin-right:20rpx;
+  font-size:60rpx;
+}
+
+/* 查询按钮 */
+.search-btn{
+  display: inline-block;
+  width:15%;
+  height:60rpx;
+  margin-top:10rpx;
+  font-size:30rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  background-color: #8cd991;
+  color:white;
+  vertical-align: top;
+  margin-left:1%;
+}
+
+/* 系列 */
+.shortcut{
+  display: flex;
+  margin: 10rpx 2% 0 2%;
+  justify-content: space-around;
+  align-items:center;
+}
+.shortcut view{
+  width:20%;
+  text-align: center;
+  background-color:white;
+  color:#3c8dad;
+  box-shadow: 2rpx 2rpx 4rpx 4rpx rgb(215, 215, 216),
+              -2rpx -2rpx 4rpx 4rpx rgb(215, 215, 216);
+  border-radius: 10rpx;
+  font-size:38rpx;
+  line-height: 1.4;
+}
+
+/* 系列的具体选项 */
+.search-box{
+  position: relative;
+}
+.selected-series-contents{
+  position:absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding:0 5% 0 5%;
+  margin-top:20rpx;
+  background-color:rgba(256, 256, 256,0.9);
+  box-sizing: border-box;
+  width:100%;
+}
+
+.selected-series-contents .option{
+  /* flex:1 22%; */
+  width:23%;
+  font-size:34rpx;
+  margin-bottom:10rpx;
+  /* margin-left:0.5%;
+  margin-right:0.5%; */
+  line-height:1.6;
+  text-align: center;
+  box-shadow: 2rpx 2rpx 2rpx 2rpx rgb(215, 215, 216),
+              -2rpx -2rpx 2rpx 2rpx rgb(215, 215, 216);
+  border-radius: 10rpx;
+
+  color:#5eaaa8;
+  z-index: 100;
+}
+
+/* -------------宠物列表------------- */
+.pet-cards-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width:100%;
+  box-sizing: border-box;
+  padding:20rpx 3%;
+}
+
+.pet-cards-box .item{
+  width:30%;
+  box-shadow: 1rpx 1rpx 3rpx 3rpx #dbe5ee,
+            -1rpx -1rpx 3rpx 3rpx #dbe5ee;
+  margin-bottom: 20rpx;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* 宠物的形象 */
+/* 限定图片外部盒子的一个高度，限定图片的宽度，每行的图片底部对齐 */
+.item .image{
+  display: flex;
+  height:200rpx;
+  width:100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.item image{
+  width:84%;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* 宠物的名称 */
+.item .name{
+  font-size:30rpx;
+  width:75%;
+  background-color:#f9b4ab;
+  margin-top:10rpx;
+  border-radius:20rpx;
+  text-align: center;
+  height:40rpx;
+  color:white;
+  line-height:40rpx;
+
+  box-sizing: border-box;
+  padding:0 20rpx;
+  white-space: normal;
+  /* text-emphasis:ellipsis; */
+}
+
+/* 宠物的系别和组别 */
+.item .other-info{
+  width:84%;
+  padding-top:10rpx;
+  box-sizing: border-box;
+  height:50rpx;
+  margin-bottom: 10rpx;
+}
+
+/* .item .other-info text{
+  
+} */
+
+.item .other-info text:first-child,.item .other-info text:nth-child(2){
+  float:left;
+
+  color:green;
+  font-size:40rpx;
+}
+
+.item .other-info text:last-child{
+  float:right;
+  font-size:30rpx;
+  height:5rpx;
+  line-height: 50rpx;
+}

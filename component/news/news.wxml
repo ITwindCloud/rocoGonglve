@@ -1,0 +1,3 @@
+<view class="box">
+ <text class="text" style="left:{{leftPos }}px;">{{content}}</text>
+</view>

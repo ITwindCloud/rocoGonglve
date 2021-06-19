@@ -1,0 +1,58 @@
+<!-- <news content="{{newsText}}"></news> -->
+
+<!-- 搜索和快捷查询 -->
+<view class="search-box">
+  <view class="search-area">
+    <text class="iconfont icon-sousuo sousuo"></text>
+    <input type="text" placeholder="输入宠物名称或者ID" />
+    <text class="iconfont icon-zhaoxiangji zhaoxiangji"></text>
+  </view>
+  <view class="search-btn">搜索</view>
+  <view class="shortcut">
+    <view wx:for="{{series}}" wx:key="*this" wx:for-item="list" wx:for-index="attr"
+     style="background-color:{{ selectedSeriesName && selectedSeriesName===attr ? '#a3d2ca':'white' }};"
+     bindtap="selectSeries" data-series="{{attr}}">
+      {{list[0]}}
+    </view>
+  </view>
+  <view wx:if="{{series && selectedSeriesName !== 'null'}}" class="selected-series-contents">
+    <block wx:for="{{ series[selectedSeriesName] }}" 
+    wx:key="index" wx:for-index="index" wx:for-item="item">
+      <view class="option" wx:if="{{ index > 0 }}" data-series="{{selectedSeriesName}}"  data-option="{{item}}"  bindtap="makeOption" style="background-color:{{makedOption && item===makedOption?'#8cd0d9':'white'}};">
+        {{item}}
+      </view>
+    </block>
+  </view>
+</view>
+
+
+<!-- 宠物卡片 -->
+
+<view class="pet-cards-box"> 
+  <view class="item" wx:for="{{pets}}" wx:key="id" wx:item="item" wx:index="index">
+    <view  class="image">
+      <image mode="widthFix" src="{{'http://'+ip +'/media/' +item.profile}}" lazy-load></image>
+    </view>
+    <view class='name'>
+      {{item.name}}
+    </view>
+    <view class="other-info">
+      <text class="iconfont {{seriesIcons[item.attr]}}" style="color:{{seriesColors[item.attr]}};"></text>
+      <text wx:if="{{item.attr2}}" class="iconfont {{seriesIcons[item.attr2]}}"
+       style="color:{{seriesColors[item.attr2]}};"></text>
+      <text wx:else></text>
+      <text>{{item.group}}</text>
+    </view>
+  </view>  
+</view>
+
+
+
+
+
+
+
+
+<!-- <view style="width:100%;height:150rpx;border:1rpx solid blue;">
+  It is nice today, which the tempperature is moderate, flower is glorious, and many fishes is active in the neighbouring river. What about go fishing？ Some baits and fishing rods is avaible.
+</view> -->

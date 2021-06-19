@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tab":"../../component/tab/tab"
+  },
+  "navigationBarTitleText":"组件演示"
+}

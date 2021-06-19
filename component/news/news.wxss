@@ -1,0 +1,17 @@
+view,text{
+  margin:0;
+  padding:0;
+}
+.box{
+  height:26px;
+  background-color:#a3d2ca;
+}
+.text{
+  position: absolute;
+  word-wrap: break-word;
+  color:white;
+  font-size:16px;
+  line-height: 26px;
+  font-style:italic;
+  white-space: nowrap;
+}

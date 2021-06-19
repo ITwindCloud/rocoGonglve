@@ -1,0 +1,10 @@
+.btlist{
+  display:flex;
+  flex-direction:row;
+}
+button{
+  width:300rpx;
+  background-color:#8ac4d0;
+  margin-top:10rpx;
+  color:white;
+}

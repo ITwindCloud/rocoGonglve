@@ -1,0 +1,10 @@
+<!--component/tab/tab.wxml-->
+<view class="container" style="">
+  <view class="item {{ item.isSelected ? 'active': '' }}" wx:for="{{list}}" wx:key="id" wx:for-item="item" bindtap="itemChange" wx:for-index="index" data-index="{{index}}">
+    {{item.name}}
+  </view>
+</view>
+<view>
+<!-- 在这里插入内容 -->
+  <slot></slot>
+</view>

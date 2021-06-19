@@ -1,0 +1,10 @@
+.submit{
+  width:400rpx;
+  background-color:#0049ff;
+  border-radius:20rpx;
+  height:80rpx;
+  line-height:80rpx;
+  color:white;
+  text-align:center;
+  margin:0 auto;
+}

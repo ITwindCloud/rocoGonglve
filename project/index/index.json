@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "news":"../../component/news/news"
+  },
+  "navigationBarTitleText": "图鉴",
+  "navigationBarBackgroundColor":"#3797a4"
+}

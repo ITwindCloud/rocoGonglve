@@ -1,0 +1,54 @@
+<!--pages/radio/radio.wxml-->
+<view>
+  <view>你最喜欢吃的水果是什么？</view>
+  <radio-group bindchange="handleFavoriteFruit">
+    <radio value="香蕉" color="#a278b5" disabled="{{is_submit}}" checked>
+      香蕉
+    </radio>
+    <radio value="哈密瓜" color="#a278b5" disabled="{{is_submit}}">
+      哈密瓜
+    </radio>
+    <radio value="榴莲" color="#a278b5" disabled="{{is_submit}}">
+      榴莲
+    </radio>
+    <radio value="菠萝" color="#a278b5" disabled="{{is_submit}}">
+      菠萝
+    </radio>
+  </radio-group>
+
+  <view>你还喜欢吃其他的什么水果</view>
+  <checkbox-group bindchange="handleLikedFruit">
+    <view>
+      <checkbox value="苹果"  color="#0049ff" disabled="{{is_submit}}">苹果</checkbox>
+    </view>
+    <view>
+      <checkbox value="葡萄"  color="#0049ff" disabled="{{is_submit}}">葡萄</checkbox>
+    </view>
+    <view>
+      <checkbox value="芒果"  color="#0049ff" disabled="{{is_submit}}">芒果</checkbox>
+    </view>
+    <view>
+      <checkbox value="荔枝"  color="#0049ff" disabled="{{is_submit}}">荔枝</checkbox>
+    </view>
+    <view>
+      <checkbox value="火龙果"  color="#0049ff" disabled="{{is_submit}}">火龙果</checkbox>
+    </view>
+    <view>
+      <checkbox value="车厘子"  color="#0049ff" disabled="{{is_submit}}">车厘子</checkbox>
+    </view>
+  </checkbox-group>
+</view>
+
+<view class="submit" bindtap="submit">
+  提交所选的水果
+</view>
+
+<view wx:if="{{is_submit}}">
+  <view>
+    你喜欢的水果是:{{favorite}}
+  </view>
+  <view>
+    你还喜欢的水果有:
+    <text wx:for="{{liking}}" wx:key="*this" wx:for-item="item">{{item}} </text>
+  </view>
+</view>

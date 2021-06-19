@@ -1,0 +1,15 @@
+<tab list="{{list}}" bindhandleItemChange="handleItemChange">
+
+  <image wx:if="{{list[0].isSelected}}" src="https://ftp.bmp.ovh/imgs/2021/06/e52a8d4732c4d3d9.jpg" style="width:100%;" lazy-load="true" mode="widthFix"></image>
+
+  <view wx:if="{{list[1].isSelected}}"> 炎炎烈日，光芒灼耀，一只孤傲的鸟从湛蓝天空和悠悠白云俯冲大地。 </view>
+
+  <view wx:if="{{list[2].isSelected}}">
+    <view>你的性别</view>
+    男<switch checked></switch>
+  </view>
+  
+  <view wx:if="{{list[3].isSelected}}">
+    <input type="text" style="width:80%;height:70rpx;border:1px solid #0049ff;color:#3f4d71;font-size:30rpx;margin:10rpx auto;" placeholder="你可以在这输入文字" />
+  </view>
+</tab>

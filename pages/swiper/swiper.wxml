@@ -1,0 +1,18 @@
+<view>轮播图演示</view>
+<swiper indicator-dots easing-function="easeInOutCubic" indicator-color="#b8b5ff" indicator-active-color="#7868e6" autoplay="true" interval="5000" duration="1000" circular="true" display-multiple-items="1"
+ >
+  <swiper-item>
+    <image src="https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg" mode="widthFix" lazy-load>
+    </image>
+  </swiper-item>
+  <swiper-item>
+    <image src="https://img.alicdn.com/imgextra/i4/6000000008137/O1CN01ynT21w29ynT4wLszg_!!6000000008137-2-octopus.png" mode="widthFix" lazy-load>
+    </image>
+  </swiper-item>
+  <swiper-item>
+    <image src="https://aecpm.alicdn.com/simba/img/TB1JNHwKFXXXXafXVXXSutbFXXX.jpg" mode="widthFix" lazy-load>
+    </image>
+  </swiper-item>
+</swiper>
+
+<rich-text nodes="{{html}}"></rich-text>

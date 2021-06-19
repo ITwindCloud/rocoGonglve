@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "project/index/index",
+    "project/function/function",
+    "project/strategy/strategy",
+    "project/profile/profile",
+
+
+    "pages/detail/detail",
+    "pages/component/component",
+    "pages/radio/radio",
+    "pages/button/button",
+    "pages/swiper/swiper",
+    "pages/demo/demo",
+    "pages/index/index",
+    "pages/bss/bss",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#00489a",
+    "navigationBarTitleText": "华大商城",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#cccccc"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "project/index/index",
+      "text": "图鉴",
+      "iconPath": "icon/tujian2.png",
+      "selectedIconPath": "icon/tujian.png"
+    },
+    {
+      "pagePath": "project/function/function",
+      "text": "功能",
+      "iconPath": "icon/gongneng2.png",
+      "selectedIconPath": "icon/gongneng.png"
+    },
+    {
+      "pagePath": "project/strategy/strategy",
+      "text": "攻略",
+      "iconPath": "icon/strategy2.png",
+      "selectedIconPath": "icon/strategy.png"
+    },
+    {
+      "pagePath": "project/profile/profile",
+      "text": "我",
+      "iconPath": "icon/wode2.png",
+      "selectedIconPath": "icon/wode.png"
+    }
+  ],
+  "color": "#1296db",
+  "selectedColor": "#2a6fdb"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

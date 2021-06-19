@@ -1,0 +1,24 @@
+<!--pages/button/button.wxml-->
+<view>button演示</view>
+<view class="bnlist" style="display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;">
+  <button style="width:45%;border-radius:70rpx;padding:0;font-size:34rpx;height:90rpx;line-height:90rpx;" open-type="contact">contact</button>
+  <button style="width:45%;border-radius:70rpx;padding:0;font-size:34rpx;height:90rpx;line-height:90rpx;" open-type="share">share</button>
+  <button style="width:45%;border-radius:70rpx;padding:0;font-size:34rpx;height:90rpx;line-height:90rpx;" open-type="getPhoneNumber">getPhoneNumber</button>
+  <button style="width:45%;border-radius:70rpx;padding:0;font-size:34rpx;height:90rpx;line-height:90rpx;" open-type="getUserInfo" bindgetuserinfo="get_user_info">getUserInfo</button>
+  <button style="width:45%;border-radius:70rpx;padding:0;font-size:34rpx;height:90rpx;line-height:90rpx;" open-type="openSetting">openSetting</button>
+  <button style="width:45%;border-radius:70rpx;padding:0;font-size:34rpx;height:90rpx;line-height:90rpx;" open-type="feedback">feedback</button>
+</view>
+<view wx:if="{{user_info}}">
+  <view>
+    昵称:{{user_info.nickName}}
+  </view>
+  <view>
+    性别:{{user_info.gender === 0 ? "男":"女"}}
+  </view>
+  <view>
+    城市:{{user_info.city}}
+  </view>
+  <view>
+    省份:{{user_info.province}}
+  </view>
+</view>

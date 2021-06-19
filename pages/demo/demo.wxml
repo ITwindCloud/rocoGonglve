@@ -1,0 +1,5 @@
+<input type="text" bindtap="handleInput"/>
+<botton bindtap="handleInput">按钮</botton>
+<view>{{inputNum}}</view>
+<image src="https://ftp.bmp.ovh/imgs/2021/06/e52a8d4732c4d3d9.jpg" lazy-load mode="widthFix">
+</image>

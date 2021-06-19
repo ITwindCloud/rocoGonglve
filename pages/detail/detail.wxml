@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<text>导入并使用iconfont</text>
+<view>
+  <view>
+    <text class="iconfont icon-gouwuche" style="font-size:80rpx;"></text>
+  </view>
+  <view>
+    <text class="iconfont icon-zhaoxiangji" style="font-size:80rpx"></text>
+  </view>
+  <view>
+    <text class="iconfont icon-guanggao" style="font-size:80rpx"></text>
+  </view>
+  <view>
+    <text class="iconfont icon-yuzhouxingqiu-13" style="font-size:80rpx"></text>
+  </view>
+  <view>
+    <text class="iconfont icon-xingxing3" style="font-size:80rpx"></text>
+  </view>
+</view>
+
+<view bindtap="getData2">
+  点击获取轮播图数据
+</view>
+<view  wx:if="{{detail}}">
+  <block wx:for="{{detail}}" wx:key="goods_id">
+    <image src="{{item.image_src}}" />
+  </block>
+</view>

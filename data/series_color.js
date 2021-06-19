@@ -1,0 +1,43 @@
+export const data = {
+  "草系":"#58b368",
+  "水系":"#bae8e8",
+  "火系":"#e74645",
+  "冰系":"#edd2cb",
+  "土系":"#ffa822",
+  "石系":"#95adbe",
+  "翼系":"#2a6fdb",
+  "幽灵系":"#a862ea",
+  "恶魔系":"#584eb2",
+  "毒系":"#7700b3",
+  "虫系":"#7700b3",
+  "电系":"#ffff00",
+  "光系":"#ffcc00",
+  "神系":"#99ff00",
+  "普通系":"#ffcc00",
+  "机械系":"#95adbe",
+  "萌系":"#ff6680",
+  "武系":"#b34766",
+  "龙系":"red"
+}
+
+export const data2 = {
+  "草系":"icon-cao",
+  "水系":"icon-shui",
+  "火系":"icon-huo",
+  "冰系":"icon-bing",
+  "土系":"icon-tu",
+  "石系":"icon-shidui",
+  "翼系":"icon-chibangyou",
+  "幽灵系":"icon-shengdanjieicon-",
+  "恶魔系":"icon-xiaoemo",
+  "毒系":"icon-duyao",
+  "虫系":"icon-kunchong",
+  "电系":"icon-dian",
+  "光系":"icon-taiyang",
+  "神系":"icon-yuzhouxingqiu-01",
+  "普通系":"icon-tubiaozhizuomoban",
+  "机械系":"icon-leishougongqixiex",
+  "萌系":"icon-aixin",
+  "武系":"icon-wushu",
+  "龙系":"icon-long"
+}

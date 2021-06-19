@@ -1,0 +1,10 @@
+/* pages/detail/detail.wxss */
+view text{
+  color:blue;
+  width:100%;
+  text-align:center;
+}
+view view{
+  width:100%;
+  text-align:center;
+}
